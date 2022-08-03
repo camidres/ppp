@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    border-bottom: 5px solid blue;
+}
+
+.ancho {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    background-color: blue;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+    /* background-color: red; */
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.logo p a {
+    color: blue;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: acme;
+}
+
+header a img {
+    max-width: 40px;
+    max-height: 40px;
+    float: left;
+    padding-top: 8px;
+    padding-left: 95px;
+}
+
+nav {
+    width: 40%;
+    height: 70px;
+    /* background-color: #000; */
+    float: right;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 50px;
+    
+}
+
+
+@font-face {
+    font-family: acme;
+    src: url(fuentes/Acme-Regular.ttf);
+}
+
+.buscar {
+    width: 39%;
+    height: 70px;
+    float: left;
+    box-sizing: border-box;
+    /* background-color: black; */
+    padding-top: 18px;
+    padding-left: 50px;
+}
+
+.buscar input {
+    padding: 5px;
+    width: 90%;
+    font-size: 1em;
+    outline: none;
+    border-radius: 30px;
+    border-color: rgb(32, 153, 223);;
+    color: blue;
+    text-align: center;
+}
+
+.buscar input::placeholder {
+    text-align: center;
+    color: blue;
+}
+
+
+
+/* ------------------
+        ESLIDER
+----------------- ------*/
+
+.contenedor{
+
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor ul{
+display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite;
+}
+
+.contenedor ul li{
+width: 100%;
+    list-style: none;
+
+}
+
+.contenedor img{
+
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+@keyframes cambio{
+
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    
+
+
+}
+
+
+/* ------------------
+
+       ICONOS
+
+--------------------*/
+.buscar input [type="text"]:focus{
+
+
+    border-color: dodgerblue;
+}
+
+
+.buscar input[type="text"]{
+    padding-right: 40px;
+
+}
+
+.buscar{
+
+    position: relative;
+
+}
+
+.buscar i{
+
+    position: absolute;
+    right: 0;
+    top: 17px;
+    padding: 9px 8px;
+    color:grey;
+    transition: .3s;
+
+    
+}
+
+
+/* -----------------
+
+     Carta
+
+ ------------------*/
+
+
+ 
+.targeta{
+    font-family: sans-serif;
+    font-size: 14;
+    width: 200px;
+    height: 300px;
+    margin-left: 10px;
+    /* background-color: red; */
+    float: left;
+    box-shadow: 0 1px 1px rgb(77, 77, 77), 0 1px 1px rgb(77, 77, 77) ;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+.targeta .img-contenedor{
+  
+
+    overflow:hidden;
+    height: 200px;
+    position: relative;
+   
+    
+}
+
+.targeta .img-contenedor img{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    border-radius: 5px;
+    top: 10px;
+    left: 15px;
+    transition: all 0.5s;
+    
+
+}
+
+.targeta:hover .img-contenedor img{
+
+    transform: scale(1.1);
+}
+
+
+.targeta .img-contenedor .promo{
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+    background:rgb(32, 153, 223);;
+    color: white;
+    padding: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.targeta .add-cart{
+
+    
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(32, 153, 223);
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+
+}
+
+.targeta .add-cart:hover{
+
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+
+.targeta .info-contenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+ 
+}
+
+.targeta .info-contenedor h3{
+    margin: 0;
+}
+
+
+.targeta .info-contenedor strong{
+    color: rgb(34, 228, 34);
+}
+
+.targeta .info-contenedor h3,strong{
+
+    padding: 5px 10px;
+    width: 100%;
+}
+
